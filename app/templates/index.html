@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hi!</h1>
+    {% for d in data %}
+    <div><p>{{ d.altitude }} {{ d.longitude }} {{ d.latitude }} {{ d.airspeed }} {{ d.time }}</p></div>
+    {% endfor %}
+{% endblock %}
